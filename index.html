@@ -43,28 +43,63 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Multi-Branded Styleguides</h1>
-					<h3>Modular components with multiple themes</h3>
-					<p>
-						<small><a href="http://www.davidelrizzo.com" target="_blank">Davide L Rizzo</a> / <a href="http://twitter.com/davidelrizzo" target="_blank">@davidelrizzo</a></small>
-					</p>
+
+					<section>
+						<h1>Multi-Branded Styleguides</h1>
+						<h3>Learnings on constructing a multi-theme Styleguide</h3>
+						<p>
+							<small><a href="http://www.davidelrizzo.com" target="_blank">Davide L Rizzo</a> / <a href="http://twitter.com/davidelrizzo" target="_blank">@davidelrizzo</a></small>
+						</p>
+					</section>
+
 				</section>
 
 				<section>
 
 					<section>
-						<h2>Page 2</h2>
-						<p>Go down for more...</p>
+						<h2>Requirements b/c Suncorp</h2>
 					</section>
 
 					<section>
-						<h3>Page 2.1</h3>
-						<p>Sub page</p>
+						<p>
+							Support multiple brands, up to 15<br>
+							(4 implemented, 5 more in progress)<br>
+							Each differentiated not just a re-skin
+						</p>
 					</section>
 
 					<section>
-						<h3>Page 2.2</h3>
-						<p>Sub page</p>
+						<p>
+							Support multiple platforms<br>
+							Java, Drupal, Angular and more..
+						</p>
+					</section>
+
+					<section>
+						<p>
+							Support teams using both<br>
+							LESS <em>and</em> SASS
+						</p>
+					</section>
+
+					<section>
+						<p>
+							Responsive as an option<br>
+							<code>responsive</code> and <code>no-responsive</code> flag in <code>&lt;html&gt;</code>
+						</p>
+					</section>
+
+					<section>
+						<p>
+							IE8+ browser support<br>
+							(Most challenging requirement by far)
+						</p>
+					</section>
+
+					<section>
+						<p>
+							Web apps and sites want only specific components and can only update when they have resources
+						</p>
 					</section>
 
 				</section>
@@ -95,7 +130,7 @@
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
-				parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				parallaxBackgroundImage: 'images/backgrounds/japan.jpg',
 				parallaxBackgroundSize: '2100px 900px',
 
 				// Optional libraries used to extend on reveal.js
