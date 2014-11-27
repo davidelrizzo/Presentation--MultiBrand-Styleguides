@@ -57,16 +57,30 @@
 					<section>
 						<h3>About Me</h3>
 						<p>User Experience and Front-end Designer, 10+ years</p>
-						<img src="http://achewood.com/comic.php?date=04232007">
+						<div style="position:relative; width:700px; height:485px; margin:15px auto;">
+							<div class="" style="position:absolute; margin:0 auto; z-index:0;">
+								<img src="images/slides/achewood1.jpg" style="width:700px; height:485px; margin:0;">
+							</div>
+							<div class="fragment fade-in" style="position:absolute; top:0; left:0; margin:0; z-index:1;">
+								<img src="images/slides/achewood2.jpg" style="width:700px; height:485px; margin:0;">
+							</div>
+							<div class="fragment fade-in"  style="position:absolute; top:0; left:0; margin:0; z-index:2;">
+								<img src="images/slides/achewood3.jpg" style="width:700px; height:485px; margin:0;">
+							</div>
+						</div>
 					</section>
 
 					<section>
-						
 						<div style="text-align:left;">
-							<img src="http://lorempixel.com/g/250/250/city" width="250" height="250" style="float:left; margin-right:20px;">
+							<img src="images/slides/suncorp_logo.png" style="width:250px; height:250px; float:left; border: none; border-radius:20px; margin:0 20px 0 0;">
 							<h3>About Suncorp Group</h3>
 							Suncorp Group includes leading general insurance, banking, life insurance and superannuation brands in Australia and New Zealand
 						</div>
+					</section>
+
+					<section>
+							<h3>So what exactly is a front-end Styleguide again?</h3>
+							<p>A reusable library of front-end components (like buttons, tables and grids) that are managed separately to any specific website or app.</p>
 					</section>
 
 				</section>
@@ -80,18 +94,28 @@
 					</section>
 
 					<section>
-						<p class="large">Support multiple brands,<br> each differentiated not just a re-skin.</p>
-						<img src="http://lorempixel.com/g/640/480/city" width="640" height="480">
+						<p class="large" style="font-size:44px">Support multiple brands,<br> each differentiated not just a re-skin</p>
+						<div style="position:relative; width:993px; height:576px; margin:15px auto;">
+							<div class="" style="position:absolute; margin:0 auto; z-index:0;">
+								<img src="images/slides/suncorp_brands.png" style="width:993px; height:576px; margin:0;">
+							</div>
+							<div class="fragment fade-in" style="position:absolute; top:0; left:0; margin:0; z-index:1;">
+								<img src="images/slides/suncorp_brands_done.png" style="width:993px; height:576px; margin:0;">
+							</div>
+							<div class="fragment fade-in"  style="position:absolute; top:0; left:0; margin:0; z-index:2;">
+								<img src="images/slides/suncorp_brands_soon.png" style="width:993px; height:576px; margin:0;">
+							</div>
+						</div>
 					</section>
 
 					<section>
 						<p class="large">Support multiple platforms</p>
-						<img src="http://lorempixel.com/g/640/280/city" width="640" height="280">
+						<img src="images/slides/platforms.png" width="758" height="250">
 					</section>
 
 					<section>
 						<p class="large">Support teams using both<br>LESS <em>and</em> SASS</p>
-						<img src="http://lorempixel.com/g/640/480/city" width="640" height="480">
+						<img src="images/slides/sass_vs_less.png" width="580" height="410">
 					</section>
 
 					<section>
@@ -101,12 +125,12 @@
 
 					<section>
 						<p class="large">IE8+ browser support</p>
-						<img src="http://lorempixel.com/g/640/280/city" width="640" height="280">
+						<img src="images/slides/ie_vs_murder.jpg" width="600" height="450">
 					</section>
 
 					<section>
 						<p class="large">Web apps and sites want only specific components and can only update when they have resources</p>
-						<img src="http://lorempixel.com/g/640/280/city" width="640" height="280">
+						<img src="images/slides/tools.png" width="757" height="275">
 						<p>(See Randeep's <a href="http://rdhaliwal.github.io/tooling-for-styleguides">Tooling Presentation</a>)</p>
 					</section>
 
@@ -123,22 +147,33 @@
 
 					<section>
 						<p class="large">Components, Bower<br>&amp; Semantic versioning</p>
+						<p>How to construct our components?</p>
+						<img src="images/slides/component_grouping.png" width="1028" height="386">
+					</section>
+
+					<section>
+						<p class="large">Our components today:</p>
 						<br>
 						<table>
 							<tbody>
 								<tr>
-									<td><strong>Base</strong> 2.1.3</td>
-									<td><strong>Icons</strong> 2.1.3</td>
-									<td><strong>Grid</strong> 2.1.3</td>
+									<td><span class="highlight">Base</span> 2.1.3</td>
+									<td><span class="highlight">Icons</span> 1.4.5</td>
+									<td><span class="highlight">Grid</span> 1.0.2</td>
 								</tr>
 								<tr>
-									<td><strong>Typography</strong> 2.1.3</td>
-									<td><strong>Buttons</strong> 2.1.3</td>
-									<td><strong>Inputs</strong> 2.1.3</td>
+									<td><span class="highlight">Typography</span> 1.6.2</td>
+									<td><span class="highlight">Buttons</span> 1.1.3</td>
+									<td><span class="highlight">Inputs</span> 1.3.2</td>
 								</tr>
 								<tr>
-									<td><strong>Layout</strong> 2.1.3</td>
-									<td><strong>Modal</strong> 2.1.3</td>
+									<td><span class="highlight">Radio/Check</span> 1.2.5</td>
+									<td><span class="highlight">Header</span> 1.3.3</td>
+									<td><span class="highlight">Toggle</span> 1.0.1</td>
+								</tr>
+								<tr>
+									<td><span class="highlight">Layout</span> 2.1.4</td>
+									<td><span class="highlight">Modal</span> 1.1.0</td>
 									<td>etc...</td>
 								</tr>
 							</tbody>
@@ -146,29 +181,52 @@
 					</section>
 
 					<section>
-						<img src="http://lorempixel.com/g/640/480/city" width="640" height="480">
-						<p><small>Brand layer ven diagram</small></p>
-					</section>
-
-					<section>
 						<p class="large">Default brand and brand layers</p>
-						<img src="http://lorempixel.com/g/640/480/city" width="640" height="480">
-						<p><small>Layer diagram: normalize, default, brand, custom</small></p>
+						<p>
+							<span class="highlight">Normalize</span> &rarr;
+							<span class="highlight">Default</span> &rarr;
+							<span class="highlight">Brand</span> &rarr;
+							<span class="highlight">Customize</span>
+						</p>
+						<!-- <pre>
+							<code data-trim>
+								<ul class="sg-Progress">
+									<li class="sg-Progress-item sg-Progress-prevItem">Find Your Car</li>
+									<li class="sg-Progress-item sg-Progress-currItem">Car Features</li>
+									<li class="sg-Progress-item sg-Progress-nextItem">Car Details</li>
+									<li class="sg-Progress-item sg-Progress-nextItem">Driver Details</li>
+								</ul>
+							</code>
+						</pre> -->
+						<img src="images/slides/branded_components.png" width="1132" height="318">
 					</section>
 
 					<section>
 						<p class="large">Colors</p>
-						<p>LESS overrides, layers in Base</p>
-						<p>Marketing, Functional and Logical colors</p>
-						<p>Examples...</p>
+						<p><i>[Marketing, Functional and Logical colour Diagram]</i></p>
+						<p>LESS overrides allow easy changes</p>
 					</section>
 
 					<section>
 						<p class="large">OOCSS &amp; SUITS naming; our way..</p>
-						<p>Preprocessor agnostic (LESS vs SASS)</p>
-						<p>.[prefix]-[Component]-[subElements]--[variant]</p>
-						<p>CSS or just SS</p>
-						<p>Styling native tags</p>
+						<ul>
+							<li class="fragment fade-in">
+								Preprocessor agnostic (Solves our LESS vs SASS problem)
+							</li>
+							<li  class="fragment fade-in">
+								<code>.[prefix]-[Component]-[subElements]--[variant]</code><br>
+								eg. <code>.sg-Radio-indicator--dark</code>
+								<br>
+								(Reduces specificity)
+							</li>
+							<li class="fragment fade-in">
+								SS vs CSS (Reduce the cascade!)
+							</li>
+							<li class="fragment fade-in">
+								Styling native tags (eg. <code>&lt;ul&gt;</code>) only in optional file
+							</li>
+						</ul>
+
 					</section>
 
 				</section>
@@ -180,7 +238,52 @@
 
 					<section>
 						<p class="huge">Icons</p>
-						<p>...</p>
+					</section>
+
+					<section>
+						<p class="large">Managing icons is tricky</p>
+						<div class="fragment fade-in">
+							<p>Icons are subjective!!!</p>
+							<p><i>[Show complex icons]</i></p>
+						</div>
+						<p class="fragment fade-in">Icon colours: Functional Colours + default</p>
+						<p class="fragment fade-in">Icon naming: <code>Icon-help--primary</code></p>
+						<p class="fragment fade-in">Exporting from Illustrator</p>
+					</section>
+
+					<section>
+						<p class="large">SVG vs Fonts vs PNGs</p>
+						<img src="images/slides/icon_comparison.png" width="780" height="361">
+					</section>
+
+					<section>
+						<div style="text-align:left;">
+							<img src="images/slides/grumpicon.jpg" style="width:236px; height:336px; float:left; border-radius:10px; margin:0 20px 0 0;">
+							<div style="">
+								<h3>Grunticon</h3>
+								Generates Icons as SVG dataURI CSS classes
+								<code style="font-size:52%; line-height:1.3em; width: 70%;">
+									background-image: url('data:image/jpg;base64,/9j/4AAQSkZ JRgABAQAAAQABAAD/4QA2RXhpZgAASUkqAAgAAAABADIBAgAUAAAAGgAAAAAAAAAyMDEy IDEyOjM3OjU1AP/iAkBJQ0NfUFJPRklMRQABAQAAAjBBREJFAhAAAG1udHJSR0IgWFlaI wAAAAAAAGFjc3BBUFBMAAAAAG5vbmUAAAAAAAAAAAAAAAAAAAABAAD21gABAAAAANMtQU AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACmNwcnQAA');
+								</code>
+								<br><br>
+								Auto generate PNGs for IE8 - with exact same class name!
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+
+
+				<!-- DOCUMENTATION -->
+				<section>
+
+					<section>
+						<p class="huge">Documentation</p>
+					</section>
+
+					<section>
+						<p><i>Will I even have time to talk about this??</i></p>
 					</section>
 
 				</section>
@@ -190,7 +293,12 @@
 				<!-- END -->
 				<section>
 					<h1>THE END</h1>
-					<p><a href="http://www.davidelrizzo.com" target="_blank">davidelrizzo.com</a></p>
+					<p><a href="http://twitter.com/davidelrizzo" target="_blank">@davidelrizzo</a></p>
+					<ul>
+						<li><a href="https://insurance.aami.com.au/motor/pub/aamiquote?insuranceType=car&productType=comprehensive" target="_blank">AAMI Car Insurance quote</a></li>
+						<li><a href="https://insurance.gio.com.au/home/pub/gioquote?productType=classic&coverType=home_contents" target="_blank">GIO Home Insurance quote</a></li>
+						<li><a href="http://www.suncorp.com.au/insurance/motorcycle" target="_blank">Suncorp Motorcycle Insurance quote</a></li>
+					</ul>
 				</section>
 
 			</div>
