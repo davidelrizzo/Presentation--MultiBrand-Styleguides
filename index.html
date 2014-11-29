@@ -47,7 +47,7 @@
 				<section>
 
 					<section>
-						<h1>Multi-Branded Styleguides</h1>
+						<p class="huge">Multi-Branded Styleguides</p>
 						<p class="large">Learnings on constructing a multi-theme Styleguide</p>
 						<p>
 							<small><a href="http://www.davidelrizzo.com" target="_blank">Davide L Rizzo</a> / <a href="http://twitter.com/davidelrizzo" target="_blank">@davidelrizzo</a></small>
@@ -55,7 +55,7 @@
 					</section>
 
 					<section>
-						<h3>About Me</h3>
+						<p class="large">About Me</p>
 						<p>User Experience and Front-end Designer, 10+ years</p>
 						<div style="position:relative; width:700px; height:485px; margin:15px auto;">
 							<div class="" style="position:absolute; margin:0 auto; z-index:0;">
@@ -73,13 +73,13 @@
 					<section>
 						<div style="text-align:left;">
 							<img src="images/slides/suncorp_logo.png" style="width:250px; height:250px; float:left; border: none; border-radius:20px; margin:0 20px 0 0;">
-							<h3>About Suncorp Group</h3>
+							<p class="large">About Suncorp Group</p>
 							Suncorp Group includes leading general insurance, banking, life insurance and superannuation brands in Australia and New Zealand
 						</div>
 					</section>
 
 					<section>
-							<h3>So what exactly is a front-end Styleguide again?</h3>
+							<p class="large">So what exactly is a front-end Styleguide again?</p>
 							<p>A reusable library of front-end components (like buttons, tables and grids) that are managed separately to any specific website or app.</p>
 					</section>
 
@@ -146,13 +146,12 @@
 					</section>
 
 					<section>
-						<p class="large">Components, Bower<br>&amp; Semantic versioning</p>
-						<p>How to construct our components?</p>
+						<p class="large">How to construct your components?</p>
 						<img src="images/slides/component_grouping.png" width="1028" height="386">
 					</section>
 
 					<section>
-						<p class="large">Our components today:</p>
+						<p class="large">Bower &amp; Semantic versioning</p>
 						<br>
 						<table>
 							<tbody>
@@ -188,41 +187,31 @@
 							<span class="highlight">Brand</span> &rarr;
 							<span class="highlight">Customize</span>
 						</p>
-						<!-- <pre>
-							<code data-trim>
-								<ul class="sg-Progress">
-									<li class="sg-Progress-item sg-Progress-prevItem">Find Your Car</li>
-									<li class="sg-Progress-item sg-Progress-currItem">Car Features</li>
-									<li class="sg-Progress-item sg-Progress-nextItem">Car Details</li>
-									<li class="sg-Progress-item sg-Progress-nextItem">Driver Details</li>
-								</ul>
-							</code>
-						</pre> -->
-						<img src="images/slides/branded_components.png" width="1132" height="318">
+						<img src="images/slides/branded_components.png" width="1132" height="354">
 					</section>
 
 					<section>
 						<p class="large">Colors</p>
-						<p><i>[Marketing, Functional and Logical colour Diagram]</i></p>
-						<p>LESS overrides allow easy changes</p>
+						<img src="images/slides/AAMI-colours.png" width="1033" height="534">
+						<!-- <p>LESS overrides allow easy changes</p> -->
 					</section>
 
 					<section>
 						<p class="large">OOCSS &amp; SUITS naming; our way..</p>
 						<ul>
-							<li class="fragment fade-in">
+							<li class="xfragment xfade-in">
 								Preprocessor agnostic (Solves our LESS vs SASS problem)
 							</li>
-							<li  class="fragment fade-in">
+							<li  class="xfragment xfade-in">
 								<code>.[prefix]-[Component]-[subElements]--[variant]</code><br>
-								eg. <code>.sg-Radio-indicator--dark</code>
+								eg. <code>.sg-Table-head--data</code>
 								<br>
 								(Reduces specificity)
 							</li>
-							<li class="fragment fade-in">
-								SS vs CSS (Reduce the cascade!)
+							<li class="xfragment xfade-in">
+								Reduce the cascade (We take the 'C' out of CSS)
 							</li>
-							<li class="fragment fade-in">
+							<li class="xfragment xfade-in">
 								Styling native tags (eg. <code>&lt;ul&gt;</code>) only in optional file
 							</li>
 						</ul>
@@ -241,19 +230,26 @@
 					</section>
 
 					<section>
-						<p class="large">Managing icons is tricky</p>
-						<div class="fragment fade-in">
-							<p>Icons are subjective!!!</p>
-							<p><i>[Show complex icons]</i></p>
-						</div>
-						<p class="fragment fade-in">Icon colours: Functional Colours + default</p>
-						<p class="fragment fade-in">Icon naming: <code>Icon-help--primary</code></p>
-						<p class="fragment fade-in">Exporting from Illustrator</p>
+						<p class="large">SVG vs Fonts vs PNGs</p>
+						<img src="images/slides/icon_comparison.png" width="780" height="361">
 					</section>
 
 					<section>
-						<p class="large">SVG vs Fonts vs PNGs</p>
-						<img src="images/slides/icon_comparison.png" width="780" height="361">
+						<p class="large">Managing icons is tricky</p>
+						<div>
+							<p style="margin-bottom:0;">
+								Icons are subjective!!!<br>
+								<small style="line-height:1.5;">
+									Which one of these represents: <span class="highlight">"My policy list"</span>?<br>
+									Which one represents it better for AAMI rather than Bingle?
+								</small>
+							</p>
+							<img src="images/slides/icons.png" width="847" height="317" style="margin:0;">
+						</div>
+						<p>
+							<span class="highlight">Icon colours:</span> Functional Colours + Default<br>
+							<span class="highlight">Icon naming:</span> <code>Icon-help--primary</code>
+						</p>
 					</section>
 
 					<section>
@@ -276,7 +272,7 @@
 
 
 				<!-- DOCUMENTATION -->
-				<section>
+				<!-- <section>
 
 					<section>
 						<p class="huge">Documentation</p>
@@ -286,13 +282,13 @@
 						<p><i>Will I even have time to talk about this??</i></p>
 					</section>
 
-				</section>
+				</section> -->
 
 
 
 				<!-- END -->
 				<section>
-					<h1>THE END</h1>
+					<p class="huge">THE END</p>
 					<p><a href="http://twitter.com/davidelrizzo" target="_blank">@davidelrizzo</a></p>
 					<ul>
 						<li><a href="https://insurance.aami.com.au/motor/pub/aamiquote?insuranceType=car&productType=comprehensive" target="_blank">AAMI Car Insurance quote</a></li>

@@ -34,7 +34,7 @@ body {
 .reveal .huge {
   font-size: 100px;
   font-weight: bold; 
-  color: white; }
+  color: #fde7b7; }
 
 .reveal .large {
   font-size: 56px; 
@@ -122,7 +122,7 @@ body {
  * BACKGROUND
  *********************************************/
 .reveal .backgrounds {
-  -webkit-filter: brightness(0.75); }
+  -webkit-filter: brightness(0.6); }
 
 /*********************************************
  * IMAGES
