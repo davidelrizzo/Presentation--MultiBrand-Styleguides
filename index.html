@@ -49,9 +49,7 @@
 					<section>
 						<p class="huge">Multi-Branded Styleguides</p>
 						<p class="large">Learnings on constructing a multi-theme Styleguide</p>
-						<p>
-							<small><a href="http://www.davidelrizzo.com" target="_blank">Davide L Rizzo</a> / <a href="http://twitter.com/davidelrizzo" target="_blank">@davidelrizzo</a></small>
-						</p>
+						<p><a href="http://www.davidelrizzo.com" target="_blank">Davide L Rizzo</a> / <a href="http://twitter.com/davidelrizzo" target="_blank">@davidelrizzo</a></p>
 					</section>
 
 					<section>
@@ -76,11 +74,12 @@
 							<p class="large">About Suncorp Group</p>
 							Suncorp Group includes leading general insurance, banking, life insurance and superannuation brands in Australia and <span style="white-space:nowrap;">New Zealand</span>
 						</div>
+						<p style="clear:both;"><br>The Styleguide covers Personal, Commercial and Life insurance Web applications, Self service application and Websites.</p>
 					</section>
 
 					<section>
-							<p class="large">What is a front-end Styleguide again?</p>
-							<p>A reusable library of front-end components (like buttons, tables and grids) that are managed separately to any specific website or web app.</p>
+							<p class="large">What is a front-end Styleguide?</p>
+							<p>A reusable library of front-end components; <br>such as buttons, tables or grids, that are managed separately to any specific website or app.</p>
 					</section>
 
 				</section>
@@ -94,7 +93,7 @@
 					</section>
 
 					<section>
-						<p class="large" style="font-size:44px">Support multiple brands,<br> each differentiated not just a re-skin</p>
+						<p class="large" style="font-size:44px">Support multiple brands</p>
 						<div style="position:relative; width:993px; height:576px; margin:15px auto;">
 							<div class="" style="position:absolute; margin:0 auto; z-index:0;">
 								<img src="images/slides/suncorp_brands.png" style="width:993px; height:576px; margin:0;">
@@ -129,7 +128,7 @@
 					</section>
 
 					<section>
-						<p class="large">Web apps and sites want only specific components and can only update when they have resources</p>
+						<p class="large">Each project needs only specific components and can only update to new Styleguide features when they have resources</p>
 						<img src="images/slides/tools.png" width="757" height="275">
 						<p>(See Randeep's <a href="http://rdhaliwal.github.io/tooling-for-styleguides">Tooling Presentation</a>)</p>
 					</section>
@@ -152,7 +151,7 @@
 
 					<section>
 						<p class="large">Bower &amp; Semantic versioning</p>
-						<br>
+						<img src="images/slides/tools.png" width="378" height="137">
 						<table>
 							<tbody>
 								<tr>
@@ -177,39 +176,40 @@
 								</tr>
 							</tbody>
 						</table>
+
 					</section>
 
 					<section>
 						<p class="large">Default brand and brand layers</p>
 						<p>
-							<span class="highlight">Normalize</span> &rarr;
 							<span class="highlight">Default</span> &rarr;
 							<span class="highlight">Brand</span> &rarr;
-							<span class="highlight">Customize</span>
+							<span class="highlight">Per site customisation</span>
 						</p>
 						<img src="images/slides/branded_components.png" width="1107" height="365">
 					</section>
 
 					<section>
 						<p class="large">Colours</p>
-						<img src="images/slides/AAMI-colours.png" width="1100" height="602">
+						<img src="images/slides/AAMI-colours.png" width="1100" height="644">
 						<p>LESS overrides allow easy changes</p>
 					</section>
 
 					<section>
-						<p class="large">OOCSS &amp; SUITS naming; our way..</p>
+						<p class="large">OOCSS &amp; SUITS naming, our way...</p>
 						<ul>
 							<li class="xfragment xfade-in">
 								Preprocessor agnostic (Solves our LESS vs SASS problem)
 							</li>
 							<li  class="xfragment xfade-in">
-								<code>.[prefix]-[Component]-[subElements]--[variant]</code><br>
+								<code>.[prefix]-[Component]-[elements]--[variant]</code><br>
 								eg. <code>.sg-Table-head--data</code>
-								<br>
-								(Reduces specificity)
+							</li>
+							<li>
+								Object Oriented CSS (OOCSS) reduces specificity
 							</li>
 							<li class="xfragment xfade-in">
-								Reduce the cascade (We take the 'C' out of CSS)
+								Minimise cascade to ensure styling doesn't <i>contaminate</i>
 							</li>
 							<li class="xfragment xfade-in">
 								Styling native tags (eg. <code>&lt;ul&gt;</code>) only in optional file
@@ -240,8 +240,7 @@
 							<p style="margin-bottom:0;">
 								Icons are subjective!!!<br>
 								<small style="line-height:1.5;">
-									Which one of these represents: <span class="highlight">"My policy list"</span>?<br>
-									Which one represents it better for AAMI rather than Bingle?
+									Which one of these represents: <span class="highlight">"My policy list"</span>?
 								</small>
 							</p>
 							<img src="images/slides/icons.png" width="847" height="317" style="margin:0;">
@@ -249,7 +248,7 @@
 						<p>
 							<span class="highlight">Icon colours:</span> Functional Colours + Default<br>
 							<span class="highlight">Icon naming:</span> <code>Icon-help--primary</code><br>
-							<span class="highlight">Icons per component:</span> Only the ones they use!
+							<span class="highlight">Icons per component:</span> Only the ones they need!
 						</p>
 					</section>
 
@@ -263,12 +262,13 @@
 									background-image: url('data:image/jpg;base64,/9j/4AAQSkZ JRgABAQAAAQABAAD/4QA2RXhpZgAASUkqAAgAAAABADIBAgAUAAAAGgAAAAAAAAAyMDEy IDEyOjM3OjU1AP/iAkBJQ0NfUFJPRklMRQABAQAAAjBBREJFAhAAAG1udHJSR0IgWFlaI wAAAAAAAGFjc3BBUFBMAAAAAG5vbmUAAAAAAAAAAAAAAAAAAAABAAD21gABAAAAANMtQU AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACmNwcnQAA');
 								</code>
 								<br><br>
-								Auto generate PNGs for IE8 - with exact same class name!
+								Auto generate PNGs for IE8 - with exact same class name
 							</div>
 						</div>
 					</section>
 
 				</section>
+
 
 
 
@@ -282,13 +282,13 @@
 					<section>
 						<p class="large"></p>
 						<p>KSS documentation <span class="highlight">&nbsp;vs&nbsp;</span> manual Markdown</p>
-						<p><i>[image example]</i></p>
+						<img src="images/slides/docs.png" width="836" height="565" style="margin:0;">
 					</section>
 
 					<section>
 						<p class="large">Visual Testing</p>
 						<p>Automated diffing from documentation examples</p>
-						<p><i>[image example]</i></p>
+						<img src="images/slides/diffs.png" width="977" height="417" style="margin:0;">
 					</section>
 
 				</section>
